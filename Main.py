@@ -25,7 +25,6 @@ while True:
     if resposta == 1:
         res = validaInt('Valor a ser inserido: ')
         bst.insert(res)
-        print('Valor inserido com sucesso!')
     elif resposta == 2:
         res = validaInt('Valor a ser removido: ')
         bst.remove(res)

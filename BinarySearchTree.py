@@ -17,6 +17,8 @@ class BinarySearchTree(BinaryTree):
                 x = x.right
         if parent is None:
             self.root = Node(value)
+        elif parent.data == value:
+            return print('Valor já existe')
         elif value < parent.data:
             parent.left = Node(value)
         else:
